@@ -1,0 +1,21 @@
+https://www.youtube.com/watch?v=FhkTclmWLOc
+
+docker ps : çalışan containerleri göster
+docker run ubuntu container çalıştır
+docker run --rm çalışan containerleri işi bitince sil
+
+docker run --rm -i -t ubuntu : bir docker konteyner içerisinde bir ubuntu image çalıştı
+
+docker images : indirilen docker images leri listeler
+
+docker pull nginx : https://hub.docker.com/ dan nginx konteynerini indirir
+
+docker rmi postgres : imajları siler hataverirse kullanılıyordur; docker ps -a komutu ile kullanım ları listele docker rm -f 3912f32e604b ile sil ve tekrar dene
+
+docker run --rm -i -t -p 8080:80 nginx : kanteyner deki 80 portunu localimdeki 8080 portuna yönlendirdim
+
+docker run -d -p 8080:80 --restart=always --name=web nginx : nginx konteynerini arka olanda çalıştırdı isim vererek docker ps ile listelenebilir 
+
+docker logs -f --since 10s web :NAME i web olan konteynerin son 10 saniyedeki logunu göster.
+
+docker exec -i -t web date : web nameli konteynerin içersinde date komutunu çalıştırır
