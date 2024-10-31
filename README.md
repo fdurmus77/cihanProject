@@ -1,3 +1,5 @@
+Birbiri ile rest web servis aracılığı ile haberleşen iki web uygulaması 2. adımda iki farklı docker kontenır da çalıştırılarak birbiri ile haberleştirilmesi sağlanacak
+
 # serverWebServices projesi web servisleri;
 ```sh
 http://localhost:8080/ =====================> index DÖNER.
