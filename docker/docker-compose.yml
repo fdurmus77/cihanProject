@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  server-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    ports:
+      - "8080:8080"
+
+  client-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    ports:
+      - "8082:8082"
+    depends_on:
+      - server-app

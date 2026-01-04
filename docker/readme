@@ -1,0 +1,17 @@
+Eski URL: http://localhost:8080/ReaderHello/ReaderMerhaba
+
+Yeni URL: http://server-app:8080/ReaderHello/ReaderMerhaba
+
+
+
+
+dokker compose leri çalıştır : docker-compose up --build
+
+curl yükle                   : docker exec -it -u 0 docker_client-app_1 sh -c "apt-get update && apt-get install -y curl"
+curl yükle                   : docker exec -it -u 0 docker_server-app_1 sh -c "apt-get update && apt-get install -y curl"
+
+docker exec -it docker_client-app_1 curl http://server-app:8080/ReaderHello/ReaderMerhaba
+
+
+docker_client-app_1
+docker_server-app_1
